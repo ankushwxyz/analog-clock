@@ -1,0 +1,80 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style type="text/css">
+    .container {
+        position: relative;
+    }
+    .outer-div {
+        width: 150px;
+        height: 150px;
+        border: 3px solid black;
+        border-radius: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .quadrant {
+        flex-grow: 1;
+        /* border: 1px solid #000; */
+        width: 73px;
+        height: 73px;
+    }
+    .quadrant-1 {
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+    .quadrant-2 {
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+    .quadrant-3 {
+        border-right: 1px solid #000;
+        border-top: 1px solid #000;
+    }
+    .quadrant-4 {
+        border-top: 1px solid #000;
+        border-left: 1px solid #000;
+    }
+    .sec-hand {
+        position: relative;
+        height:  150px;
+        width: 0;
+        /* border: 1px solid black; */
+        transform: rotate(200deg);
+        top: -154px;
+    }
+    .sec-hand-upper {
+        position: relative;
+        border: 1px solid black;
+        height: 60px;
+        top: 13px;
+    }
+    </style>
+
+</head>
+
+<body style=" margin: 0 !important; padding: 0; font-family: 'Arial','sans-serif'; font-size: 20px; line-height:33px;">
+    <center style="width: 100%; table-layout: fixed; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+        This is clock
+        <div class="container" >
+            <div class="outer-div">
+                <div class="quadrant quadrant-1"></div>
+                <div class="quadrant quadrant-2"></div>
+                <div class="quadrant quadrant-3"></div>
+                <div class="quadrant quadrant-4"></div>
+            </div>
+            <div class="sec-hand">
+                <div class="sec-hand-upper" ></div>
+                <!-- <div class="sec-hand-lower" ></div> -->
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
