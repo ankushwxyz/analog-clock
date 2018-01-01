@@ -15,31 +15,81 @@
         height: 150px;
         border: 3px solid black;
         border-radius: 80px;
-        display: flex;
+        /* display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: wrap; */
     }
-    .quadrant {
-        flex-grow: 1;
+    .hour {
+        width: 150px;
+        /* flex-grow: 1; */
         /* border: 1px solid #000; */
-        width: 73px;
-        height: 73px;
+        /* width: 73px;
+        height: 73px; */
     }
-    .quadrant-1 {
-        border-right: 1px solid #000;
-        border-bottom: 1px solid #000;
+    .hour-1 {
+        /* border: 1px solid #000; */
+        transform: rotate(300deg);
+        position: relative;
+        top: 75px;
+        /* border-bottom: 1px solid #000; */
     }
-    .quadrant-2 {
-        border-left: 1px solid #000;
-        border-bottom: 1px solid #000;
+    .hour-2 {
+        transform: rotate(330deg);
+        position: relative;
+        top: 72px;
+        /* border-bottom: 1px solid #000; */
     }
-    .quadrant-3 {
-        border-right: 1px solid #000;
-        border-top: 1px solid #000;
+    .hour-3 {
+        transform: rotate(0deg);
+        position: relative;
+        top: 72px;
+        /* border-top: 1px solid #000; */
     }
-    .quadrant-4 {
-        border-top: 1px solid #000;
-        border-left: 1px solid #000;
+    .hour-4 {
+        transform: rotate(30deg);
+        position: relative;
+        top: 70px;
+    }
+    .hour-5 {
+        transform: rotate(60deg);
+        position: relative;
+        top: 68px;
+    }
+    .hour-6 {
+        transform: rotate(90deg);
+        position: relative;
+        top: 64px;
+    }
+    .hour-7 {
+        transform: rotate(120deg);
+        position: relative;
+        top: 62px;
+    }
+    .hour-8 {
+        transform: rotate(150deg);
+        position: relative;
+        top: 60px;
+    }
+    .hour-9 {
+        transform: rotate(180deg);
+        position: relative;
+        top: 58px;
+    }
+    .hour-10 {
+        transform: rotate(210deg);
+        position: relative;
+        top: 56px;
+    }
+    .hour-11 {
+        transform: rotate(240deg);
+        position: relative;
+        top: 54px;
+    }
+    .hour-12 {
+        transform: rotate(270deg);
+        position: relative;
+        top: 52px;
+        left: 1px;
     }
     .sec-hand {
         position: relative;
@@ -47,13 +97,19 @@
         width: 0;
         /* border: 1px solid black; */
         transform: rotate(200deg);
-        top: -154px;
+        top: -152px;
     }
     .sec-hand-upper {
         position: relative;
         border: 1px solid black;
         height: 60px;
         top: 13px;
+    }
+    .hours {
+        position: relative;
+        left: 65px;
+        width: 10px;
+        border: 1px solid black;
     }
     </style>
 
@@ -64,10 +120,42 @@
         This is clock
         <div class="container" >
             <div class="outer-div">
-                <div class="quadrant quadrant-1"></div>
-                <div class="quadrant quadrant-2"></div>
-                <div class="quadrant quadrant-3"></div>
-                <div class="quadrant quadrant-4"></div>
+                <div class="hour hour-1">
+                    <div class="hours" ></div>
+                </div>
+                <div class="hour hour-2">
+                    <div class="hours" ></div>
+                </div>
+                <div class="hour hour-3">
+                    <div class="hours" ></div>
+                </div>
+                <div class="hour hour-4">
+                    <div class="hours" ></div>
+                </div>
+                <div class="hour hour-5">
+                    <div class="hours" ></div>
+                </div>
+                <div class="hour hour-6">
+                    <div class="hours" ></div>
+                </div>
+                <div class="hour hour-7">
+                    <div class="hours" ></div>
+                </div>
+                <div class="hour hour-8">
+                    <div class="hours" ></div>
+                </div>
+                <div class="hour hour-9">
+                    <div class="hours" ></div>
+                </div>
+                <div class="hour hour-10">
+                    <div class="hours" ></div>
+                </div>
+                <div class="hour hour-11">
+                    <div class="hours" ></div>
+                </div>
+                <div class="hour hour-12">
+                    <div class="hours" ></div>
+                </div>
             </div>
             <div class="sec-hand">
                 <div class="sec-hand-upper" ></div>
